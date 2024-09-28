@@ -1,0 +1,103 @@
+.login-logo-animation {
+    display: none;
+}
+
+.login-logo-animate {
+    z-index: 9999;
+    width: 200px;
+    height: auto;
+    /* position: absolute; */
+    position: fixed;
+    transition: transform 1.5s ease, top 1.5s ease, left 1.5s ease;
+
+}
+
+/* Animation to move logo to center */
+.login-logo-animate.move-to-center {
+    /* transform: translate(-50%, -50%) scale(1); */
+    animation: move-logo 1.5s ease-in-out forwards;
+}
+
+@keyframes move-logo {
+    0% {
+        transform: translate(-250%, -150%) scale(1);
+        top: 50%;
+        left: 50%;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        /* Move to center and scale down */
+    }
+}
+
+.login-logo-animate img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* enroll-models-button*/
+.enroll-models-button {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    left: -10rem;
+    top: 2rem;
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: rgb(203, 203, 203);
+    transition: transform 0.5s ease;
+    transform: scale(1);
+    padding: 8px;
+}
+.triangle{
+    position: absolute;
+    top:-0.6rem;
+    left: 12rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    /* background-color: #fefefe; */
+    /* padding: 8px; */
+    /* border: 1px solid #888; */
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: start;
+
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: start;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.tick{
+    border: 1px solid rgb(52, 101, 52);
+    border-radius: 50%;
+    background-color: rgb(52, 101, 52);
+    padding: 2px;
+}
